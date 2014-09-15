@@ -11,7 +11,7 @@ ssh nemo@$DEVICEIP "
 echo 'start $APP'
 # start not attached screen--------------------------------
 screen -d -m -S $APP
-# run maps without attaching the screen--------------------
+# run app without attaching the screen--------------------
 screen -S $APP -p 0 -X stuff $'invoker --type=silica-qt5 $APP $LINK\r'
 sleep 10
 echo '$APP successfuly started!'
